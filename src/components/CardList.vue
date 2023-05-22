@@ -15,24 +15,28 @@ export default {
 </script>
 
 <template>
-  <select name="" id="" placeholder="Seleziona">
-    <option value="">Seleziona qui</option>
-  </select>
-
-  <div class="cards-container">
-    <CardApp
-      v-for="(card, index) in store.cardList"
-      :key="index"
-      class="card-character"
-      :card="card"
-    />
+  <div class="sfondo">
+    <div class="cards-container">
+      <CardApp
+        v-for="(card, index) in store.cardList"
+        :key="index"
+        class="card-character"
+        :card="card"
+      />
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+.sfondo {
+  background-color: rgb(212, 143, 56);
+  padding: 1.5rem;
+}
 .cards-container {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .card-character {

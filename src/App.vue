@@ -25,12 +25,14 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <main>
-      <HeaderApp />
-      <CardList />
-    </main>
-  </div>
+  <HeaderApp />
+
+  <select name="" id="" placeholder="Seleziona">
+    <option value="">Seleziona qui</option>
+  </select>
+  <main>
+    <CardList />
+  </main>
 </template>
 
 <style lang="scss">
@@ -52,5 +54,8 @@ export default {
 
 h1 {
   text-align: center;
+}
+select {
+  margin: 1rem;
 }
 </style>
