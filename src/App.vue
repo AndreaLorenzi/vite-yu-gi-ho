@@ -26,7 +26,6 @@ export default {
 
 <template>
   <HeaderApp />
-
   <select name="" id="" placeholder="Seleziona">
     <option value="">Seleziona qui</option>
   </select>

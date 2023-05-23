@@ -6,7 +6,6 @@ export default {};
   <header>
     <div class="logo">
       <img src="../assets/img/Yu-Gi-Oh_Logo.jpg" alt="" />
-
       <h1>Yu Gi Oh</h1>
     </div>
   </header>
