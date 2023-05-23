@@ -20,15 +20,17 @@ export default {
     axios
       .get("https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0%27")
       .then((response) => (this.store.cardList = response.data.data));
+
+    axios
+      .get("https://db.ygoprodeck.com/api/v7/archetypes.php")
+      .then((response) => (this.store.arrselect = response.data));
   },
 };
 </script>
 
 <template>
   <HeaderApp />
-  <select name="" id="" placeholder="Seleziona">
-    <option value="">Seleziona qui</option>
-  </select>
+  <input type="text" />
   <main>
     <CardList />
   </main>

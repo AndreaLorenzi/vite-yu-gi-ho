@@ -15,6 +15,12 @@ export default {
 </script>
 
 <template>
+  <select v-model="store.arrselect" class="button-card" placeholder="Seleziona">
+    <option v-for="option in store.arrselect" class="option-card">
+      {{ option.archetype_name }}
+    </option>
+  </select>
+  <button class=""></button>
   <div class="sfondo">
     <div class="cards-container">
       <CardApp
